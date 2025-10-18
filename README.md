@@ -1,9 +1,9 @@
 # veeva-mcp-server-by-cdata
 CData's Model Context Protocol (MCP) Server for Veeva
 
-:heavy_exclamation_mark: This project builds a read-only MCP server. For full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for Veeva (beta)](https://www.cdata.com/download/download.aspx?sku=SVZM-V&type=beta). 
+:heavy_exclamation_mark: This project builds a local, read-only MCP server. For fully remote MCP access, check out the first managed MCP platform: [CData Connect AI](https://www.cdata.com/ai/). For locally hosted, full read, write, update, delete, and action capabilities and a simplified setup, check out our free [CData MCP Server for Veeva](https://www.cdata.com/drivers/veeva/download/mcp/).
 ## Purpose
-We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data Veeva supported by the [CData JDBC Driver for Veeva](https://www.cdata.com/drivers/veeva/jdbc).
+We created this read-only MCP Server to allow LLMs (like Claude Desktop) to query live data Veeva supported by the [CData JDBC Driver for Veeva](https://www.cdata.com/drivers/veeva/jdbc/).
 
 CData JDBC Driver connects to Veeva by exposing them as relational SQL models.
 
@@ -20,7 +20,7 @@ This server wraps that driver and makes Veeva data available through a simple MC
       mvn clean install
       ``` 
       This creates the JAR file: CDataMCP-jar-with-dependencies.jar
-2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/veeva/download/jdbc](https://www.cdata.com/drivers/veeva/download/jdbc)
+2. Download and install the CData JDBC Driver for {source}: [https://www.cdata.com/drivers/veeva/download/jdbc](https://www.cdata.com/drivers/veeva/download/jdbc/)
 3. License the CData JDBC Driver:
     * Navigate to the `lib` folder in the installation directory, typically:
         * (Windows) `C:\Program Files\CData\CData JDBC Driver for Veeva\`
